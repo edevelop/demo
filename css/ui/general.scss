@@ -42,7 +42,7 @@
 body{
 	font-family: 'Droid Serif', serif;
 	color: $color-fuente;
-	background: url(/demo/assets/imagenes/bg/wall4.png);
+	background: url('/demo/assets/imagenes/bg/wall4.png');
 	@include media-query(palm){
 	 	font-size: 90%;
 	}
