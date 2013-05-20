@@ -1,11 +1,27 @@
+/*-----------------------*\
+	Variables generales
+\*-----------------------*/
+	$sombra-oscura: #999999!default;
+	$sombra-clara: #CCCCCC!default;
+
+/*-----------------------*\
+	articulos.scss
+\*-----------------------*/
+	$articulo__resumen--color-borde: #FFFFFF!default;
+	$articulo__resumen--color-fondo: #F5F5F5!default;
+	$articulo__header--color-fondo:  #4D92E7!default;
+	$articulo__header--font-family:	sans!default;
+	$articulo__titulo--color-fondo: #ffffff!default;
+	$articulo__titulo--font-weight: 400!default;
+	$fecha--color: #CCCCCC!default;
+
+
 .articulo__resumen{
-	border: 1px solid #cccccc;	
-	margin-left: 0.5rem;
-	margin-bottom: 0.5rem;
-	margin-right: 0.5rem;
+	border: 1px solid $articulo__resumen--color-borde;
+	margin: 0 0.5rem 1rem 0.5rem;
 	background-color: #ffffff;
-	@include vendor(box-shadow, 2px 2px #999999);
-	background-color:#F5F5F5;
+	@include vendor(box-shadow, 2px 2px $sombra-oscura);
+	background-color:$articulo__resumen--color-fondo;
 }
 
 .articulo__header{
@@ -13,8 +29,9 @@
 	position:relative;
 	left: -0.5rem;
 	top: 1rem;
-	background-color: #4D92E7;
-	@include vendor(box-shadow, 1px 1px #999999);
+	background-color: $articulo__header--color-fondo;
+	font-family: $articulo__header--font-family;
+	@include vendor(box-shadow, 2px 2px $sombra-clara);
 	&:before{
 		position:absolute;
 		content:'';
@@ -22,41 +39,36 @@
 		border-bottom: 0.5rem solid #154DAC ;
 		border-left: 0.5rem solid transparent;
 	}
-	font-family: 'Quicksand', sans-serif;
-	@include vendor(box-shadow, 2px 2px #cccccc);
-
 }
-
 
 .articulo__titulo{
 	display: table-cell;
 	vertical-align: middle;
-	padding-left: 1em;
-	padding-right: 1em;
-	background-color: #ffffff;
-	font-weight: 300;
+	padding: 0.2rem 1rem 0.2rem 1rem;
+	background-color: $articulo__titulo--color-fondo;
+	font-weight: $articulo__titulo--font-weight;
 	a{
 		color: #4D92E7;
 	}
 }
 
-
 .fecha{
-	color:#ffffff;
+	color: $fecha--color;
+	//color:#ffffff;
 	float: left;
 	margin-left: 0.5rem;
-	background-color: #4D92E7;
-	
 	padding-right: 0.5em;
 	@include media-query(lap-and-up){
 		padding-right: 3em;
 	}
-
 }
 
 .fecha__dia, .fecha__mes{
-	display: inline;
+	display: table-cell;
+	padding: 0.1rem;
+	
 }
+
 .fecha__year{
 	clear: both;
 	text-align: center;
@@ -66,5 +78,3 @@
 .articulo__contenido{
 	padding: 0.5em;
 }
-
-

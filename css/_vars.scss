@@ -69,6 +69,24 @@ $use-greybox:       false;
 /**
  * Place any of your own variables that sit on top of inuit.css here.
  */
-$color-fuente: #757575;
-$color-enlace: #757575;
-$color-hover: #FF3E00;
+
+/*------------------------------------*\
+    Variables generales.
+\*------------------------------------*/ 
+$color-fuente:		#757575;
+$color-enlace:		#757575;
+$color-hover:		#FF3E00;
+$sombra-oscura:	#999999;
+$sombra-clara: #CCCCCC;
+
+/*------------------------------------*\
+    Variables: ui/articulos.scss
+\*------------------------------------*/ 
+
+	$articulo__resumen--color-borde: #CCCCCC;
+	$articulo__resumen--color-fondo: #F5F5F5;
+	$articulo__header--color-fondo:  #4D92E7;
+	$articulo__header--font-family: 'Quicksand', sans-serif;
+	$articulo__titulo--font-weight: 400;
+	$articulo__titulo--color-fondo: #FFFFFF;
+	$fecha--color: #FFFFFF;
