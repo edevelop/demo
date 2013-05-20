@@ -2,4 +2,4 @@ name: Nuevo sitio
 pygments: true
 exclude: [ 'css' ]
 include: [ 'css/style.min.css' ]
-baseurl: /demo/
+baseurl: /demo
