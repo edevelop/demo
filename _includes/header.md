@@ -1,3 +1,3 @@
 
 
-<h1 class="nombresitio"><a href="/">{{ site.name }}</a></h1>
+<h1 class="nombresitio"><a href="/demo/">{{ site.name }}</a></h1>
