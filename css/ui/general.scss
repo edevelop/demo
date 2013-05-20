@@ -1,0 +1,57 @@
+/*----------------------------------*\
+	1.- Contenido
+	2.- Shared
+\*----------------------------------*/
+
+
+/*----------------------------------*\
+	1.- Contenido
+\*----------------------------------*/
+
+.wrapper-contenido{
+	margin:0 0.5rem 0.5rem 0.5rem;
+}
+
+.contenido{
+	
+}
+
+.contenido__header{
+	text-align: center;
+}
+
+.contenido__titulo{
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+}
+
+
+/*----------------------------------*\
+	2.- Shared
+\*----------------------------------*/
+
+
+body{
+	color: $color-fuente;
+	background: url(/assets/imagenes/bg/wall4.png);
+	@include media-query(palm){
+	 	font-size: 90%;
+	}
+
+	@include media-query(lap-and-up){
+	 	font-size: 100%;
+	 	
+	}
+	
+	@include media-query(desk-wide){
+	 	font-size: 110%;
+	}
+}
+
+.enlace{
+	text-decoration: none;
+	color: $color-enlace;
+	&:hover{
+		color: $color-hover;
+	}
+}

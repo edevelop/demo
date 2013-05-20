@@ -1,0 +1,29 @@
+---
+layout: default
+title: Blog
+---
+<section class="contenido">
+	<header class="contenido__header">
+		<h1 class="contenido__titulo visuallyhidden--palm visuallyhidden--lap">{{ page.title }}</h1>
+	</header>
+
+{% for post in site.posts %}
+	<section class="articulo__resumen">
+		<header class="articulo__header">
+			<!--<div class="fecha ">{{ post.date | date:'%d %m %Y'}}</div>-->
+			
+		 
+			<div class="fecha">
+				<div class="fecha__dia ">{{ post.date | date:'%d'}}</div>
+				<div class="fecha__mes ">{{ post.date | date:'%m'}}</div>
+				<div class="fecha__year ">{{ post.date | date:'%Y'}}</div>
+			</div>
+			<h2 class="epsilon articulo__titulo"><a href="{{ post.url }}" class="enlace">{{ post.title }}</a></h2>
+		</header>
+		<div class="articulo__contenido">
+			<p>{{post.excerpt}}</p>
+		</div>;
+	</section>	
+{% endfor %}
+
+</section>

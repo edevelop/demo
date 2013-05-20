@@ -1,0 +1,32 @@
+.navegacion{
+	@extend .nav; 
+	@extend .nav--banner;
+	
+		border-top: 1px solid #cccccc;
+		border-bottom: 1px solid #cccccc;
+
+		li{
+			padding: 0.5rem 1rem 0.5rem 1rem;
+			a{
+				text-decoration: none;
+				color: $color-enlace;
+				&:hover{
+					color: $color-hover;
+				}
+			}
+		}
+		ul{
+			margin: 0;
+		}
+
+
+		@include media-query(lap){
+			margin: 0.5rem 10% 0.5rem 10%;
+		}
+
+		@include media-query(desk){
+			margin: 0.5rem 20% 0.5rem 20%;
+		}		
+
+
+}

@@ -1,0 +1,24 @@
+.nombresitio{
+	text-align: center;
+	a{
+		text-decoration: none;
+		color: $color-enlace;
+		&:hover{
+			color: $color-hover;
+		}
+	}
+
+	@include media-query(palm){
+			margin: 0.5rem;
+	}
+
+	@include media-query(lap){
+			margin: 1.5rem;
+	}
+
+	@include media-query(desk){
+			margin-top: 33.3%;
+	}
+
+
+}
